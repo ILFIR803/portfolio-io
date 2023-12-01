@@ -1,0 +1,126 @@
+.contact {
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+.contact__wrap {
+  display: grid;
+  grid-template-columns: minmax(150px, 350px) minmax(120px, auto);
+  gap: 50px;
+}
+.contact__foto img {
+  display: block;
+  width: 100%;
+}
+.contact__text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.contact__policy {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.contact__policy input {
+  margin-right: 5px;
+}
+.contact__social a {
+  margin-right: 15px;
+}
+.contact__forms {
+  margin-top: 30px;
+  display: grid;
+  grid-template: 45px 95px 45px/repeat(2, minmax(190px, 280px));
+  justify-content: space-between;
+  gap: 21px 25px;
+}
+.contact__textarea {
+  position: relative;
+  grid-column: 1/3;
+}
+.contact__input {
+  position: relative;
+}
+.contact__triggers {
+  margin-top: 12px;
+  display: grid;
+  grid-column: 1/3;
+  grid-template-columns: 110px auto;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.contact__input input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 12px;
+}
+.contact__input label {
+  padding: 0 8px;
+  margin-bottom: 0;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  background-color: #fff;
+}
+.contact__textarea textarea {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-size: 12px;
+  resize: none;
+}
+.contact__textarea label {
+  padding: 0 8px;
+  margin-bottom: 0;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .contact__wrap {
+    grid-template-columns: minmax(150px, 294px) minmax(120px, auto);
+  }
+  .contact__forms {
+    grid-template: 45px 95px 45px/repeat(2, minmax(150px, 280px));
+  }
+}
+@media (max-width: 991px) {
+  .contact__wrap {
+    grid-template-columns: minmax(120px, auto);
+  }
+  .contact__foto {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .contact__forms {
+    display: block;
+    grid-template: unset;
+  }
+  .contact__forms input {
+    margin-bottom: 15px;
+  }
+  .contact__triggers {
+    display: block;
+    grid-template: unset;
+  }
+  .contact__policy {
+    display: flex;
+    align-items: center;
+  }
+  .contact__policy input {
+    margin-bottom: 0;
+  }
+  .contact__btn {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=contact.css.map */
