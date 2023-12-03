@@ -6,7 +6,7 @@ function Content() {
          <div className="container">
             <div className="content__wrap">
                <div className="content__foto">
-                  <img src='/img/album/foto1.jpg' alt="foto" />
+                  <img src='./img/album/foto1.jpg' alt="foto" />
                </div>
                <div className="content__wrapper">
                   <h1 className="content__title title">Про меня</h1>
