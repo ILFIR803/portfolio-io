@@ -4,7 +4,7 @@ function Contact() {
          <div className="container">
             <div className="contact__wrap">
                <div className="contact__foto">
-                  <img src='/img/album/foto1.jpg' alt="foto" />
+                  <img src='./img/album/foto1.jpg' alt="foto" />
                </div>
                <div className="contact__wrapper">
                   <h1 className="contact__title title">Контакты</h1>
