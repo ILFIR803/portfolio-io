@@ -28,19 +28,21 @@ function Contact() {
          name: name,
          email: email,
          text: text,
-      }
+      };
       emailjs
          .send(
             'service_5j3iv96',
             'template_nn5huuq',
             templateParams,
             '7m0mjUbWtSC4FUY-S')
-         .then((result) => {
-            console.log(result.text);
+         .then(() => {
+            alert('Ваше сообщение успешно отправлено');
          }, (error) => {
-            console.log(error.text);
+            alert("Ошибка отправки");
          });
-
+      setName("");
+      setText("");
+      setEmail("");
    }
 
    return (

@@ -1,6 +1,7 @@
 function Navbar(props) {
 
    const { active, setActive } = props;
+   
 
    return <>
       <div className={active ? 'menu menu-active' : 'menu'} onClick={() => setActive(false)}>
@@ -11,6 +12,7 @@ function Navbar(props) {
             <nav>
                <ul className="menu__list">
                   <li className="menu__item menu__item-active" onClick={() => setActive(false)}><a href="#">Главная</a></li>
+                  <li className="menu__item" onClick={() => setActive(false)}><a href="#content">Про меня</a></li>
                   <li className="menu__item" onClick={() => setActive(false)}><a href="#portfolio">Портфолио</a></li>
                   <li className="menu__item" onClick={() => setActive(false)}><a href="#contact">Контакты</a></li>
                </ul>
