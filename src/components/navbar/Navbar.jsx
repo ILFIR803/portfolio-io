@@ -10,9 +10,9 @@ function Navbar(props) {
             <div className="menu__close" onClick={() => setActive(false)}>&#10006;</div>
             <nav>
                <ul className="menu__list">
-                  <li className="menu__item menu__item-active"><a href="#">Главная</a></li>
-                  <li className="menu__item"><a href="#portfolio">Портфолио</a></li>
-                  <li className="menu__item"><a href="#contact">Контакты</a></li>
+                  <li className="menu__item menu__item-active" onClick={() => setActive(false)}><a href="#">Главная</a></li>
+                  <li className="menu__item" onClick={() => setActive(false)}><a href="#portfolio">Портфолио</a></li>
+                  <li className="menu__item" onClick={() => setActive(false)}><a href="#contact">Контакты</a></li>
                </ul>
             </nav>
             <div className="menu__social">
