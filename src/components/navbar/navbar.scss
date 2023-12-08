@@ -28,19 +28,18 @@
    }
 
    &__list {
-      list-style-type: none;
+         list-style-type: none; 
+         margin-bottom: 20px;
+      a {
+         color: black;
+      }     
    }
 
    &__item {
       position: relative;
       font-size: 22px;
       font-weight: 500;
-      margin-bottom: 20px;
-
-      a {
-         color: black;
-      }
-
+      
       &:after {
          content: '';
          display: block;

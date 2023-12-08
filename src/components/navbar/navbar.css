@@ -27,15 +27,15 @@
 }
 .menu__list {
   list-style-type: none;
+  margin-bottom: 20px;
+}
+.menu__list a {
+  color: black;
 }
 .menu__item {
   position: relative;
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 20px;
-}
-.menu__item a {
-  color: black;
 }
 .menu__item:after {
   content: "";
