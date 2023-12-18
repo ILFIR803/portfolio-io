@@ -3,21 +3,25 @@
    width: 100vw;
    height: 100vh;
    top: 0;
-   left: -120%;
-   transition: all 0.3s;
+   right: -120%;
+   transition: all 0.5s;
    z-index: 20;
+
    &-active {
-      left: 0;
+      right: 0;
    }
+
 
    &__nav {
       width: 300px;
       height: 100vh;
       background-color: antiquewhite;
-      position: relative;
+      position: absolute;
       top: 0;
-      padding: 100px 20px;
+      right: 0;
+      padding: 100px 30px;
    }
+
 
    &__close {
       position: absolute;
@@ -28,18 +32,22 @@
    }
 
    &__list {
-         list-style-type: none; 
-         margin-bottom: 20px;
+      list-style-type: none;
+      margin-bottom: 20px;
+      margin-left: 30px;
+
       a {
          color: black;
-      }     
+
+      }
    }
 
    &__item {
       position: relative;
       font-size: 22px;
       font-weight: 500;
-      
+      margin-bottom: 20px;
+
       &:after {
          content: '';
          display: block;
@@ -89,9 +97,11 @@
          justify-content: center;
          padding-top: 130px;
       }
+
       &__close {
          right: 35px;
       }
+
       &__list {
          width: 160px;
       }

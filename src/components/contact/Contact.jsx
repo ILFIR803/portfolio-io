@@ -8,6 +8,7 @@ function Contact() {
    const [text, setText] = useState('');
    const [checked, setChecked] = useState(true);
    const [checkedEmail, setCheckedEmail] = useState(false);
+   // const [result, setResult] = useState(false);
 
 
    const emailHandler = (e) => {
@@ -35,10 +36,10 @@ function Contact() {
             'template_nn5huuq',
             templateParams,
             '7m0mjUbWtSC4FUY-S')
-         .then(() => {
-            alert('Ваше сообщение успешно отправлено');
+         .then((result) => {
+            alert("Ваше сообщение доставлено!");
          }, (error) => {
-            alert("Ошибка отправки");
+            alert("Ваше сообщение не отправлено! Свяжитесь пожалуйста другим способом!");
          });
       setName("");
       setText("");
@@ -135,10 +136,13 @@ function Contact() {
                            </div>
                         </div>
                      </form>
+                     
 
-                  </div>
+                  </div> 
+                  
                </div>
             </div>
+           
          </section >
       </>
    )
