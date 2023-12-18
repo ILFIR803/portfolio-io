@@ -1,5 +1,6 @@
 .content {
-  padding-top: 100px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .content__wrap {
   display: grid;

@@ -8,7 +8,7 @@ function Header() {
 
    return <>
       
-      <div className="header">
+      <div className="header" id="header">
          <div className="container">
             <h2 className="header__title title">Меня зовут Ильфир Галиахметов</h2>
             <h1 className="header__subtitle subtitle" >Я web-разработчик <br />из города Ноябрьск</h1>

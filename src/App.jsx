@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 
 import { Content } from "./components/content/Content";
 import { Portfolio } from "./components/portfolio/Portfolio";
