@@ -1,5 +1,6 @@
 .portfolio {
   padding-top: 100px;
+  background-color: rgba(251, 244, 235, 0.2);
 }
 .portfolio__items {
   display: grid;

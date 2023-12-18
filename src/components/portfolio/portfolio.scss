@@ -1,5 +1,6 @@
 .portfolio {
    padding-top: 100px;
+   background-color: rgb(251, 244, 235, 0.2);
    &__items {
       display: grid;
       grid-template: repeat(2, 280px)/ repeat(4, minmax(100px, 280px));
